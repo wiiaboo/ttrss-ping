@@ -1,0 +1,48 @@
+{
+  "title": "Tiny Tiny RSS Ping",
+  "name": "ttrss-ping",
+  "version": "0.0.2",
+  "description": "Status checker for Tiny Tiny RSS",
+  "main": "./index.js",
+  "author": "Ricardo Constantino",
+  "engines": {
+    "firefox": ">=38.0"
+  },
+  "license": "MIT",
+  "permissions": {
+    "private-browsing": true,
+    "multiprocess": true
+    },
+  "preferences": [
+    {
+      "name": "Enabled",
+      "title": "Enable checking for unread articles (otherwise, act like a normal shortcut to URL):",
+      "type": "bool",
+      "value": false
+    },
+    {
+      "name": "BaseURL",
+      "title": "URL of your Tiny Tiny RSS installation:",
+      "type": "string",
+      "value": "http://example.com/tt-rss/"
+    },
+    {
+      "name": "Login",
+      "title": "Login",
+      "type": "string",
+      "value": "user"
+    },
+    {
+      "name": "UpdateInterval",
+      "title": "Update interval (in minutes):",
+      "type": "integer",
+      "value": 15
+    },
+    {
+      "name": "BackgroundColor",
+      "title": "Badge color for 'icon' style",
+      "type": "color",
+      "value": "#b00014"
+    }
+  ]
+}
